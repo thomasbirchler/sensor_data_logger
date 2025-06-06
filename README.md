@@ -10,6 +10,16 @@ This project is a modular and extensible Arduino-based data logger that reads fr
 
 ## Project Structure
 
+sensor_data_logger/
+├── sensor_data_logger.ino # Main Arduino sketch
+├── config.h # Central configuration constants (e.g., pin mappings)
+├── sensors/ # Custom sensor drivers
+│ ├── SensorX.h/.cpp
+│ └── SensorY.h/.cpp
+├── datalogger/ # Logging interface (e.g., Serial, SD)
+│ ├── SerialLogger.h/.cpp
+│ └── (optional) SDLogger.h/.cpp
+
 
 ## How to Use
 
